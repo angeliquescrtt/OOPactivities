@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Form</title>
+  <script src="function.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<div id="student-form">
+  <label for="studentId">ID No:</label>
+  <input type="text" id="studentId" size="30">
+
+  <label for="studentName">Name:</label>
+  <input type="text" id="studentName" size="30">
+
+  <label for="studentGrade">Grade:</label>
+  <input type="text" id="studentGrade" size="30">
+
+  <button onclick="printInfo()">Add Student</button>
+
+  <h3>Student Record</h3>
+  <table id="infoTable">
+    <thead>
+      <tr>
+        <th>Student ID</th>
+        <th>Student Name</th>
+        <th>Student Grade</th>
+      </tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+  </table>
+
+  <button onclick="printList()">Print List</button>
+</div>
+
+</body>
+</html>
